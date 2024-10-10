@@ -119,7 +119,7 @@ class _MenuItemViewState extends State<MenuItemView>
     if (widget.animationConfig.enable) {
       _ctrl = AnimationController(vsync: this);
       updateAnimation();
-      if (widget.selected) {
+      if (widget.expanded) {
         _ctrl?.value = 1;
       }
     }
